@@ -1,3 +1,30 @@
-.protfolio{
-    background-color: darkgoldenrod;
+@import "../../global.scss";
+
+.protfolio {
+
+    background-color: rgb(224, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slider {
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                width: 700px;
+                height: 100%;
+                background-color: rgb(255, 255, 255);            
+                border-radius: 20px;
+            }
+        }
+    }
 }
