@@ -1,21 +1,20 @@
 import React from 'react';
-import "./Menu.scss"
+import "../../Style/Menu.scss"
 
 const Menu = ({menuOpen, setMenuOpen}) => {
     return (
         <div className={"menu " + (menuOpen && "active")} id="menu">
             <ul>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#intro">Intro</a>
+                    <a href="#header">Home</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#protfolio">Protfolio</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#work">Work</a>
+                    <a href="#project">Project</a>
                 </li>
             </ul>
-            
         </div>
     );
 };

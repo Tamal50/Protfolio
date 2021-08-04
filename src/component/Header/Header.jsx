@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import "./Header.scss"
+import "../../Style/Header.scss"
 import { init } from 'ityped'
 
 const Header = () => {

@@ -1,8 +1,8 @@
-@import "../../global.scss";
+@import "./global.scss";
 
 .AboutMe {
     margin-top: 20px;
-    height: 58.8vh;
+    height: 50.8vh;
 
     @include mobile{
         height: 35vh;

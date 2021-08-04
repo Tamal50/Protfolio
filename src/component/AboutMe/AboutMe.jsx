@@ -1,6 +1,6 @@
 import React from 'react';
-import "./AboutMe.scss"
-import IconList from '../../Icon';
+import "../../Style/AboutMe.scss"
+import IconList from '../../Api/Icon';
 
 const AboutMe = () => {
     return (
@@ -16,7 +16,7 @@ const AboutMe = () => {
                 }
             </div>
                 <div className="buttonwraper">
-                    <button className="CVbutton">Download CV</button>
+                    <a target="_blank" rel="noreferrer" href="https://drive.google.com/u/0/uc?id=1dWxNwR_UfSiLeyf3CElh-fpXaMR4iKsu&export=download"><button className="CVbutton">Download CV</button></a>
                 </div>
         </div>
     );

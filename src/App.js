@@ -2,7 +2,7 @@ import Header from "./component/Header/Header";
 import Project from "./component/Project/Project";
 import Protfolio from "./component/Protfolio/Protfolio";
 import Topbar from "./component/Topbar/Topbar"
-import "./app.scss"
+import "./Style/app.scss"
 import { useState } from "react";
 import Menu from "./component/Menu/Menu";
 

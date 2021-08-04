@@ -1,6 +1,6 @@
-import Github from './image/icon/github.svg'
-import Facebook from './image/icon/facebook.svg'
-import Linkdin from './image/icon/linkedin.svg'
+import Github from '../image/icon/github.svg'
+import Facebook from '../image/icon/facebook.svg'
+import Linkdin from '../image/icon/linkedin.svg'
 
 
 

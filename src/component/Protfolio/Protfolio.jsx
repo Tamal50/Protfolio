@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Protfolio.scss"
-import skills from "../../skill"
+import "../../Style/Protfolio.scss"
+import skills from "../../Api/skill"
 import AboutMe from '../AboutMe/AboutMe';
 
 

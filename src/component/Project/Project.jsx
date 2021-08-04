@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import IntroList from "../ProjectList/ProjectList";
-import "./Project.scss";
+import icon from '../../image/arrow.svg'
+import "../../Style/Project.scss";
 import {
     featuredPortfolio,
     webPortfolio,
     mobilePortfolio,
     designPortfolio,
     contentPortfolio,
-  } from "../../data"
+  } from "../../Api/data"
 
 const Intro = () => {
   const [selected, setSelected] = useState("featured");
@@ -62,7 +63,7 @@ const Intro = () => {
   },[selected])
 
   return (
-    <div className="intro" id="intro">
+    <div className="project" id="project">
       <h1>Project</h1>
       <ul>
         {list.map((item) => (
@@ -83,6 +84,7 @@ const Intro = () => {
             alt=""
           />
           <h3>{data.title}</h3>
+          <img className="icon" src={icon} alt="" />
         </div>
          ))
         }
