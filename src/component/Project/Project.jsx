@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import IntroList from "../IntroList/IntroList";
-import "./Intro.scss";
+import IntroList from "../ProjectList/ProjectList";
+import "./Project.scss";
 import {
     featuredPortfolio,
     webPortfolio,
@@ -63,7 +63,7 @@ const Intro = () => {
 
   return (
     <div className="intro" id="intro">
-      <h1>Intro</h1>
+      <h1>Project</h1>
       <ul>
         {list.map((item) => (
           <IntroList

@@ -1,0 +1,88 @@
+@import "../../global.scss";
+
+.AboutMe {
+    margin-top: 20px;
+    height: 58.8vh;
+
+    @include mobile{
+        height: 35vh;
+    }
+
+    h1{
+        margin: 10px;
+        text-align: center;
+        font-size: 80px;
+        font-family: 'Kaushan Script', cursive;
+        font-weight: 400;
+        overflow: hidden;
+
+        @include mobile{
+            font-size: 40px;
+          }
+    }
+    h2{
+        text-align: center;
+    }
+    .contactButoon{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .button{
+            height: 60px;
+            width: 60px;
+            margin: 20px;
+
+            @include mobile{
+                height: 40px;
+                width: 40px;
+                margin: 10px;
+              }
+            
+            &:hover{
+                height: unset;
+                width: unset;
+                margin: 10px;
+            }
+                img{
+                    &:hover{
+                        height: 80px;
+                        width: 80px;
+
+                        @include mobile{
+                            height: 40px;
+                            width: 40px;
+                        }
+
+                    }
+
+                    @include mobile{
+                    
+                    }
+                }
+        }
+    }
+
+    .buttonwraper {
+        text-align: center;
+        .CVbutton {
+            background-color: white;
+            padding: 15px;
+            border-radius: 13px;
+            border: 3px solid black;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px;
+            font-family: 'Anton', sans-serif;
+
+            @include mobile{
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

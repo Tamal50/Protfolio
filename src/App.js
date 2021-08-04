@@ -1,7 +1,6 @@
 import Header from "./component/Header/Header";
-import Intro from "./component/Intro/Intro";
+import Project from "./component/Project/Project";
 import Protfolio from "./component/Protfolio/Protfolio";
-import Work from "./component/Work/Work";
 import Topbar from "./component/Topbar/Topbar"
 import "./app.scss"
 import { useState } from "react";
@@ -15,9 +14,8 @@ function App() {
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} ></Menu>
       <div className="section">
       <Header></Header>
-      <Intro></Intro>
       <Protfolio></Protfolio>
-      <Work></Work>
+      <Project></Project>
       </div>
     </div>
   );

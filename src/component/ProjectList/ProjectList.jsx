@@ -1,5 +1,5 @@
 import React from "react";
-import "./IntroList.scss";
+import "./ProjectList.scss";
 const IntroList = ({ title, active, setSelected, id }) => {
   return (
     <li
