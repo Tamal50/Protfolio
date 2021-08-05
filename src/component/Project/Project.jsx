@@ -7,8 +7,8 @@ import {
     featuredPortfolio,
     webPortfolio,
     mobilePortfolio,
-    designPortfolio,
-    contentPortfolio,
+    templatePortfolio,
+    miniPortfolio,
   } from "../../Api/data"
 
 const Intro = () => {
@@ -27,15 +27,15 @@ const Intro = () => {
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "Mobile Responsive",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "template",
+      title: "Template",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "mini-project",
+      title: "Mini Project",
     },
   ];
 
@@ -51,11 +51,11 @@ const Intro = () => {
         case "mobile":
             setData(mobilePortfolio);
             break;
-        case "design":
-            setData(designPortfolio);
+        case "template":
+            setData(templatePortfolio);
             break;
-        case "content":
-            setData(contentPortfolio);
+        case "mini-project":
+            setData(miniPortfolio);
             break;
         default:
             setData(featuredPortfolio)
@@ -84,7 +84,7 @@ const Intro = () => {
             alt=""
           />
           <h3>{data.title}</h3>
-          <img className="icon" src={icon} alt="" />
+          <a className="icon" href={data.link} target="_blank" rel="noreferrer"><img src={icon} alt="" /></a>
         </div>
          ))
         }
